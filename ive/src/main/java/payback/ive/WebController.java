@@ -44,7 +44,7 @@ public class WebController {
     return "registers"; // Return the Registers view which will show all registers in your table.
   }
 
-  @PostMapping("/api/register")
+  @PostMapping("/api/add")
   @ResponseBody
   public void addRegister(@RequestBody Register newRegister) {
     registerRepository.save(newRegister);

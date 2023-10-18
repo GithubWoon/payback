@@ -7,7 +7,7 @@
 <h1>All Registers</h1>
 
 <!-- Add User Form -->
-<form id="registerForm" action="#" method="post">
+<form id="addForm" action="#" method="post">
   <label for="id">ID:</label><br>
   <input type="text" id="id" name="id"><br>
   <label for="name">Name:</label><br>
@@ -23,14 +23,14 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Password</th> <!-- Add this header -->
+        <th>Password</th> 
     </tr>
 
-    <!-- Assuming that 'registers' is a list of user objects passed from the server-side -->
-    <tr th:each="register : ${registers}">
+    <!--Tyhmeleaf 라는 서버사이드 템플릿 엔진에 처리되는 코드 -->
+    <tr th:each="register : ${registers}"> <!--reigster 임시변수, registers 객체 리스트-->
         <td th:text="${register.id}"></td> 
         <td th:text="${register.name}"></td> 
-        <td th:text="${register.password}"></td> <!-- Add this column -->
+        <td th:text="${register.password}"></td>
     </tr>
 </table>
 
@@ -42,16 +42,17 @@ function submitData() {
   var password = $('#password').val();
 
   $.ajax({
-    url: '/api/register', // Change this to your API endpoint
-    data: { 'id': id, 'name': name, 'password': password },
+    url: '/api/add', // Change this to your API endpoint
+    data: JSON.stringify({ 'id': id, 'name': name, 'password': password }),
     type: 'POST',
+    contentType: "application/json",
     success: function(response) {
-      alert('Data submitted successfully');
+      alert('데이터 추가완료!');
       location.reload(); // Optional: reload the page to show the updated list
     },
     error: function(error) {
       console.log(error);
-      alert('An error occurred');
+      alert('데이터 추가실패!');
     }
   });
 }
