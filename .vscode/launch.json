@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-IveApplication<ive>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "payback.ive.IveApplication",
+            "projectName": "ive",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
