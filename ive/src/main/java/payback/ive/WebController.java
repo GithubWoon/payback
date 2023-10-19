@@ -32,6 +32,11 @@ public class WebController {
     return "OTT";
   }
 
+  @RequestMapping("/Login")
+  public String Login() {
+    return "Login";
+  }
+
   @RequestMapping("/Database")
   public String Database(Model model) {
     model.addAttribute("registers", registerRepository.findAll());
