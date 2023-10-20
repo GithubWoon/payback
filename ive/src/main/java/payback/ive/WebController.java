@@ -18,7 +18,7 @@ public class WebController {
   }
 
   @RequestMapping("/Baddie")
-  public String baddie() {
+  public String Baddie() {
     return "Baddie";
   }
 
@@ -35,6 +35,91 @@ public class WebController {
   @RequestMapping("/Login")
   public String Login() {
     return "Login";
+  }
+
+  @RequestMapping("/AddComplete")
+  public String AddComplete() {
+    return "AddComplete";
+  }
+
+  @PostMapping("/AddManager")
+  public String AddManager() {
+    return "AddManager";
+  }
+
+  @PostMapping("/AddQuantity")
+  public String AddQuantity() {
+    return "AddQuantity";
+  }
+
+  @PostMapping("/Basket")
+  public String Basket() {
+    return "Basket";
+  }
+
+  @PostMapping("/BasketComplete")
+  public String BasketComplete() {
+    return "BasketComplete";
+  }
+
+  @PostMapping("/Cancel")
+  public String Cancel() {
+    return "Cancel";
+  }
+
+  @PostMapping("/CancelComplete")
+  public String CancelComplete() {
+    return "CancelComplete";
+  }
+
+  @PostMapping("/Complete")
+  public String Complete() {
+    return "Complete";
+  }
+
+  @PostMapping("/Look")
+  public String Look() {
+    return "Look";
+  }
+
+  @PostMapping("/ManagerMenu")
+  public String ManagerMenu() {
+    return "ManagerMenu";
+  }
+
+  @PostMapping("/Menu")
+  public String Menu() {
+    return "Menu";
+  }
+
+  @PostMapping("/Purchase")
+  public String Purchase() {
+    return "Purchase";
+  }
+
+  @PostMapping("/PurchaseComplete")
+  public String PurchaseComplete() {
+    return "PurchaseComplete";
+  }
+
+  @PostMapping("/Receipt")
+  public String Receipt() {
+    return "Receipt";
+  }
+
+  @PostMapping("/Register")
+  public String Register() {
+    return "Register";
+  }
+
+  @PostMapping("/Start")
+  public String Start() {
+    return "Start";
+  }
+
+  @PostMapping("/UserMenu")
+  public String UserMenu() {
+    return "UserMenu";
   }
 
   @RequestMapping("/Database")
