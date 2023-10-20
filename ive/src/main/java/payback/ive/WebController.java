@@ -42,6 +42,7 @@ public class WebController {
     return "AddComplete";
   }
 
+  // 안됨
   @RequestMapping("/AddManager")
   public String AddManager() {
     return "AddManager";
@@ -52,36 +53,43 @@ public class WebController {
     return "AddQuantity";
   }
 
+  // 안됨
   @RequestMapping("/Basket")
   public String Basket() {
     return "Basket";
   }
 
+  // 안됨
   @RequestMapping("/BasketComplete")
   public String BasketComplete() {
     return "BasketComplete";
   }
 
+  // 안됨
   @RequestMapping("/Cancel")
   public String Cancel() {
     return "Cancel";
   }
 
+  // 안됨
   @RequestMapping("/CancelComplete")
   public String CancelComplete() {
     return "CancelComplete";
   }
 
+  // 안됨
   @RequestMapping("/Complete")
   public String Complete() {
     return "Complete";
   }
 
+  // 안됨
   @RequestMapping("/Look")
   public String Look() {
     return "Look";
   }
 
+  // 여기부터 확인안했
   @RequestMapping("/ManagerMenu")
   public String ManagerMenu() {
     return "ManagerMenu";
