@@ -42,82 +42,82 @@ public class WebController {
     return "AddComplete";
   }
 
-  @PostMapping("/AddManager")
+  @RequestMapping("/AddManager")
   public String AddManager() {
     return "AddManager";
   }
 
-  @PostMapping("/AddQuantity")
+  @RequestMapping("/AddQuantity")
   public String AddQuantity() {
     return "AddQuantity";
   }
 
-  @PostMapping("/Basket")
+  @RequestMapping("/Basket")
   public String Basket() {
     return "Basket";
   }
 
-  @PostMapping("/BasketComplete")
+  @RequestMapping("/BasketComplete")
   public String BasketComplete() {
     return "BasketComplete";
   }
 
-  @PostMapping("/Cancel")
+  @RequestMapping("/Cancel")
   public String Cancel() {
     return "Cancel";
   }
 
-  @PostMapping("/CancelComplete")
+  @RequestMapping("/CancelComplete")
   public String CancelComplete() {
     return "CancelComplete";
   }
 
-  @PostMapping("/Complete")
+  @RequestMapping("/Complete")
   public String Complete() {
     return "Complete";
   }
 
-  @PostMapping("/Look")
+  @RequestMapping("/Look")
   public String Look() {
     return "Look";
   }
 
-  @PostMapping("/ManagerMenu")
+  @RequestMapping("/ManagerMenu")
   public String ManagerMenu() {
     return "ManagerMenu";
   }
 
-  @PostMapping("/Menu")
+  @RequestMapping("/Menu")
   public String Menu() {
     return "Menu";
   }
 
-  @PostMapping("/Purchase")
+  @RequestMapping("/Purchase")
   public String Purchase() {
     return "Purchase";
   }
 
-  @PostMapping("/PurchaseComplete")
+  @RequestMapping("/PurchaseComplete")
   public String PurchaseComplete() {
     return "PurchaseComplete";
   }
 
-  @PostMapping("/Receipt")
+  @RequestMapping("/Receipt")
   public String Receipt() {
     return "Receipt";
   }
 
-  @PostMapping("/Register")
+  @RequestMapping("/Register")
   public String Register() {
     return "Register";
   }
 
-  @PostMapping("/Start")
+  @RequestMapping("/Start")
   public String Start() {
     return "Start";
   }
 
-  @PostMapping("/UserMenu")
+  @RequestMapping("/UserMenu")
   public String UserMenu() {
     return "UserMenu";
   }
