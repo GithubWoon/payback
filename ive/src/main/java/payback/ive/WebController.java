@@ -129,7 +129,7 @@ public class WebController {
   public String UserMenu() {
     return "UserMenu";
   }
-
+  
   @RequestMapping("/Database")
   public String Database(Model model) {
     model.addAttribute("registers", registerRepository.findAll());
